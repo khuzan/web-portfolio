@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-bora1.png'
+import ME from '../../assets/me-bora.png'
 import { about } from '../../constants'
 
 const About = () => {
