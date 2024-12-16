@@ -9,6 +9,9 @@ import {
   Av2,
   Av3,
   Av4,
+  evogym,
+  hoobank,
+  janeesper,
 } from "../assets";
 
 import { FaAward } from "react-icons/fa6";
@@ -105,22 +108,22 @@ export const seo = [
 export const portfolio = [
   {
     id: 1,
-    image: IMG1,
-    title: "Title Here",
+    image: evogym,
+    title: "EVOGYM",
     github: "https://github.com",
     demo: "demo",
   },
   {
     id: 2,
-    image: IMG2,
-    title: "Title Here",
+    image: hoobank,
+    title: "HooBank",
     github: "https://github.com",
     demo: "demo",
   },
   {
     id: 3,
-    image: IMG3,
-    title: "Title Here",
+    image: janeesper,
+    title: "Portfolio",
     github: "https://github.com",
     demo: "demo",
   },

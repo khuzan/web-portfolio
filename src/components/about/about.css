@@ -18,6 +18,18 @@
     place-items: center;
 }
 
+.about__brush-1 {
+    position: absolute;
+    top: 110%;
+    left: 10%;
+}
+
+.about__brush-2 {
+    position: absolute;
+    margin-top: -20rem;
+    left: 80%;
+}
+
 /* .about__me-image {
     border-radius: 2rem;
     overflow: hidden;
@@ -25,9 +37,9 @@
     transition: var(--transition);
 } */
 
-.about__me-image:hover {
+/* .about__me-image:hover {
     transform: rotate(0);
-}
+} */
 
 .about__cards {
     display: grid;

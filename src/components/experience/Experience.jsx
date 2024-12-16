@@ -1,12 +1,16 @@
 import React from "react";
 import "./experience.css";
-import { BiCheck } from "react-icons/bi";
+import { brush3, brush4 } from "../../assets";
 import { HiMiniCodeBracketSquare } from "react-icons/hi2";
 import { experience__web, experience__seo } from "../../constants";
 
 const Experience = () => {
   return (
     <section id="experience">
+      <div className="experience__brush-1">
+        <img src={brush3} alt="brush" />
+      </div>
+      
       <h5>My Recent Work</h5>
       <h2>Experience</h2>
 
@@ -53,6 +57,9 @@ const Experience = () => {
           </ul>
         </article>
         {/* END OF CONTENT CREATION */}
+      </div>
+      <div className="experience__brush-2">
+        <img src={brush4} alt="brush" />
       </div>
     </section>
   );

@@ -56,6 +56,15 @@
     font-size: 0.9rem;
 }
 
+.experience__brush-1 {
+    position: absolute;
+}
+
+.experience__brush-2 {
+    position: absolute;
+    left: 80%;
+}
+
 
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) =========== */
 @media screen and (max-width: 1024px) {

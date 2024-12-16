@@ -29,7 +29,15 @@
 .portfolio__item-cta {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
+}
+
+.portfolio__brush-1 {
+    position: absolute;
+}
+
+.portfolio__brush-2 {
+    position: absolute;
+    left: 80%;
 }
 
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) =========== */
