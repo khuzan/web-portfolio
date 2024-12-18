@@ -40,6 +40,15 @@
     color: var(--color-primary);
 }
 
+.skills__brush-1 {
+    position: absolute;
+}
+
+.skills__brush-2 {
+    position: absolute;
+    left: 85%;
+}
+
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) =========== */
 @media screen and (max-width: 1024px) {
     .skills__container {
@@ -66,5 +75,9 @@
     .skills__container > div {
         width: 100%;
         padding: 2rem 1rem;
+    }
+
+    .skills__brush-1, .skills__brush-2 {
+        visibility: hidden;
     }
 }

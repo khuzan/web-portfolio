@@ -55,4 +55,8 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    .portfolio__brush-1, .portfolio__brush-2 {
+        visibility: hidden;
+    }
 }

@@ -59,11 +59,11 @@ export const frontend = [
   },
   {
     skill: "Tailwind",
-    rate: "Experienced",
+    rate: "Intermediate",
   },
   {
     skill: "React",
-    rate: "Experienced",
+    rate: "Intermediate",
   },
 ];
 
@@ -78,11 +78,11 @@ export const backend = [
   },
   {
     skill: "PHP",
-    rate: "Experienced",
+    rate: "Intermediate",
   },
   {
     skill: "Laravel",
-    rate: "Experienced",
+    rate: "Intermediate",
   },
   {
     skill: "C#",

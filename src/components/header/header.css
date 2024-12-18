@@ -1,6 +1,6 @@
 header {
-    height: 100vh;
-    padding-top: 7rem;
+    height: 120vh;
+    padding-top: 5rem;
     overflow: hidden;
 }
 
@@ -10,16 +10,6 @@ header {
     position: relative;
 }
 
-.header__brush-1 {
-    position: absolute;
-    right: 54%;
-    width: 250px;
-}
-
-.header__brush-2 {
-    position: absolute;
-    width: 200px;
-}
 
 /* ================ CTA =========== */
 
@@ -39,7 +29,7 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 10rem;
+    bottom: 30%;
 }
 
 .header__socials::after {
@@ -54,7 +44,7 @@ header {
 .me {
     /* background: linear-gradient(var(--color-primary), transparent); */
     width: 32rem;
-    /* height: 30rem; */
+    height: 30rem;
     position: absolute;
     left: calc(50% - 16rem);
     margin-top: 2rem;
@@ -68,7 +58,7 @@ header {
 .scroll__down {
     position: absolute;
     right: -2.3rem;
-    bottom: 15rem;
+    bottom: 30%;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;

@@ -87,5 +87,8 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-
+    
+    .experience__brush-1, .experience__brush-2 {
+        visibility: hidden;
+    }
 }

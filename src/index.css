@@ -120,6 +120,17 @@ img {
     object-fit: cover;
 }
 
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--color-primary);
+    transform-origin: 0%;
+    z-index: 1;
+}
+
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) =========== */
 @media screen and (max-width: 1024px) {
     .container {

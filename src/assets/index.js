@@ -29,11 +29,13 @@ import brush9 from './9.png'
 import brush10 from './10.png'
 import brush11 from './11.png'
 import brush12 from './12.png'
+import brush13 from './13.png'
 
 export {
     IMG1, IMG2, IMG3, IMG4, IMG5, IMG6,
     Av1, Av2, Av3, Av4,
     me_bora, me_green,
-    brush1, brush2, brush3, brush4, brush5, brush6, brush7, brush8, brush9, brush10, brush11, brush12,
+    brush1, brush2, brush3, brush4, brush5, brush6, brush7, brush8,
+    brush9, brush10, brush11, brush12, brush13,
     evogym, hoobank, janeesper
 };
