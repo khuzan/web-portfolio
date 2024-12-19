@@ -4,9 +4,9 @@ import CTA from "./CTA";
 import HeaderSocial from "./HeaderSocial";
 import { me_green, brush7, brush13 } from "../../assets";
 import { motion, useScroll, useSpring } from "framer-motion";
+import { hidFromTopVariant, hidFromBottomVariant } from "../../motion";
 
 const Header = () => {
-  
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -18,15 +18,33 @@ const Header = () => {
     <header id="header">
       <motion.div className="progress-bar" style={{ scaleX }} />
       <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>Aljon Mar</h1>
-        <h5 className="text-light">Web Developer</h5>
+        <motion.h5 variants={hidFromTopVariant} initial="hidden" animate="visible">
+          Hello I'm
+        </motion.h5>
+
+        <motion.h1 variants={hidFromBottomVariant} initial="hidden" animate="visible">
+          Aljon Mar
+        </motion.h1>
+
+        <motion.h5
+          variants={hidFromBottomVariant}
+          initial="hidden"
+          animate="visible"
+          className="text-light"
+        >
+          Web Developer
+        </motion.h5>
+
         <CTA />
         <HeaderSocial />
-
-        <div className="me">
+        
+        <motion.div
+          variants={hidFromBottomVariant}
+          initial="hidden"
+          animate="visible"
+          className="me">
           <img src={me_green} alt="me" />
-        </div>
+        </motion.div>
 
         <a href="#contact" className="scroll__down">
           Scroll Down
