@@ -9,7 +9,7 @@ import { Link } from 'react-scroll'
 
 const Nav = () => {
   return (
-    <nav>
+    <nav style={{ opacity: 0}}>
       <Link to='header' spy={true} smooth={true} offset={-100} duration={300} title='Me'><AiOutlineHome/></Link>
       <Link to='about' spy={true} smooth={true} offset={-150} duration={300} title='About Me'><AiOutlineUser /></Link>
       <Link to='skills' spy={true} smooth={true} offset={-150} duration={300} title='Skills'><VscVscodeInsiders/></Link>
