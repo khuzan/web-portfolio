@@ -64,10 +64,6 @@ export const FromTopVariant = {
       duration: 0.8,
       stiffness: 30
     }
-  },
-  viewport: {
-    once: true,
-    amount: 0.5
   }
 }
 
@@ -85,10 +81,6 @@ export const FromBottomVariant = {
       duration: 0.8,
       stiffness: 30
     }
-  },
-  viewport: {
-    once: true,
-    amount: 0.5
   }
 }
 
@@ -103,10 +95,6 @@ export const AboutContentVariant = {
     transition: {
       delay: 1
     }
-  },
-  viewport: {
-    once: true,
-    amount: 0.5
   }
 }
 
@@ -124,11 +112,7 @@ export const AboutCardVariant = {
       duration: 0.8,
       stiffness: 30
     }
-  }),
-  viewport: {
-    once: true,
-    amount: 0.5
-  }
+  })
 }
 
 export const AboutCardTextVariant = {
@@ -145,10 +129,6 @@ export const AboutCardTextVariant = {
       duration: 0.8,
       stiffness: 30
     }
-  },
-  viewport: {
-    once: true,
-    amount: 0.5
   }
 }
 
@@ -166,10 +146,6 @@ export const AboutButtonVariant = {
       duration: 0.8,
       stiffness: 10
     }
-  },
-  viewport: {
-    once: true,
-    amount: 0.5
   }
 }
 
@@ -187,9 +163,41 @@ export const AboutImgVariant = {
       duration: 0.8,
       stiffness: 30
     }
-  },
-  viewport: {
-    once: true,
-    amount: 0.5
   }
+}
+
+// Skills
+
+export const SkillsContainerVariant = {
+  hidden: {
+    opacity: 0,
+    y: -20
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      delay: 0.8,
+      duration: 0.5,
+      stiffness: 25
+    }
+  }
+}
+
+export const SkillsContentVariant = {
+  hidden: {
+    opacity: 0,
+    x: -30,
+  },
+  visible: (index: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: 'spring',
+      delay: 1 * index,
+      duration: 0.7,
+      stiffness: 25
+    }
+  })
 }

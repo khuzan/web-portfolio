@@ -24,7 +24,7 @@ const About = () => {
         variants={FromTopVariant}
         initial="hidden"
         whileInView="visible"
-        viewport="viewport"
+        viewport={{ once: true, amount: 0.5}}
       >
         Get To Know
       </motion.h5>
@@ -33,7 +33,7 @@ const About = () => {
         variants={FromBottomVariant}
         initial="hidden"
         whileInView="visible"
-        viewport="viewport"
+        viewport={{ once: true, amount: 0.5}}
       >
         About Me
       </motion.h2>
@@ -47,7 +47,7 @@ const About = () => {
               variants={AboutImgVariant}
               initial="hidden"
               whileInView="visible"
-              viewport="viewport"
+              viewport={{ once: true, amount: 0.5}}
             />
           </div>
         </div>
@@ -56,7 +56,7 @@ const About = () => {
           variants={AboutContentVariant}
           initial="hidden"
           whileInView="visible"
-          viewport="viewport"
+          viewport={{ once: true, amount: 0.5}}
         >
           <div className="about__cards">
             {about.map(({ title, description, icon }, index) => {
@@ -67,7 +67,7 @@ const About = () => {
                   variants={AboutCardVariant}
                   initial="hidden"
                   whileInView="visible"
-                  viewport="viewport"
+                  viewport={{ once: true, amount: 0.5}}
                   custom={index}
                 >
                   {icon}
@@ -82,7 +82,7 @@ const About = () => {
             variants={AboutCardTextVariant}
             initial="hidden"
             whileInView="visible"
-            viewport="viewport"
+            viewport={{ once: true, amount: 0.5}}
           >
             A passionate Web developer having an experience of building Web
             applications with Javascript / ReactJS / AngularJS and some other
@@ -95,7 +95,7 @@ const About = () => {
             variants={AboutButtonVariant}
             initial="hidden"
             whileInView="visible"
-            viewport="viewport"
+            viewport={{ once: true, amount: 0.5}}
           >
             Let's Talk
           </motion.a>
