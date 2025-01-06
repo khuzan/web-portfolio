@@ -40,16 +40,15 @@
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
-
     height: 200px;
     clip-path: ellipse(85% 100% at 50% 0%);
 }
 
-.about__card:hover {
+/* .about__card:hover {
     background: transparent;
-    border-color: var(--color-bg-variant);
+    border-color: var(--color-primary-variant);
     cursor: default;
-}
+} */
 
 .about__icon {
     color: var(--color-primary);
@@ -72,12 +71,14 @@
 }
 
 .about__brush-1 {
+    z-index: -1;
     position: absolute;
     top: 130%;
     left: 10%;
 }
 
 .about__brush-2 {
+    z-index: -1;
     position: absolute;
     margin-top: -20rem;
     left: 80%;

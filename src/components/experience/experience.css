@@ -57,10 +57,12 @@
 }
 
 .experience__brush-1 {
+    z-index: -1;
     position: absolute;
 }
 
 .experience__brush-2 {
+    z-index: -1;
     position: absolute;
     left: 80%;
 }

@@ -50,6 +50,23 @@ export const CTAVariant = {
   }
 }
 
+export const HeaderSocialVariant = {
+  hidden: {
+    opacity: 0,
+    x: -30,
+  },
+  visible: (index: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: 'spring',
+      delay: 0.9 * index,
+      duration: 0.8,
+      stiffness: 30
+    }
+  })
+}
+
 export const FromTopVariant = {
   hidden: {
     opacity: 0,
@@ -80,6 +97,40 @@ export const FromBottomVariant = {
       delay: 0.6,
       duration: 0.8,
       stiffness: 30
+    }
+  }
+}
+
+export const FromLeftVariant = {
+  hidden: {
+    opacity: 0,
+    x: -25
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: 'spring',
+      delay: 0.7,
+      duration: 0.8,
+      stiffness: 10
+    }
+  }
+}
+
+export const FromRightVariant = {
+  hidden: {
+    opacity: 0,
+    x: 25
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: 'spring',
+      delay: 0.7,
+      duration: 0.8,
+      stiffness: 10
     }
   }
 }
@@ -198,6 +249,25 @@ export const SkillsContentVariant = {
       delay: 1 * index,
       duration: 0.7,
       stiffness: 25
+    }
+  })
+}
+
+// Portfolio
+
+export const PortfolioItemVariant = {
+  hidden: {
+    opacity: 0,
+    x: 30,
+  },
+  visible: (index: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: 'spring',
+      delay: 0.9 * index,
+      duration: 0.8,
+      stiffness: 30
     }
   })
 }

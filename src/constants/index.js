@@ -14,6 +14,10 @@ import {
   janeesper,
 } from "../assets";
 
+import { BsLinkedin } from "react-icons/bs";
+import { FaSquareGithub } from "react-icons/fa6";
+import { FiDribbble } from "react-icons/fi";
+
 import { FaAward } from "react-icons/fa6";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
@@ -21,6 +25,21 @@ import { VscFolderLibrary } from "react-icons/vsc";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaSquareUpwork } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
+
+export const header__social = [
+  {
+    href: '#linkedin',
+    icon: <BsLinkedin/>,
+  },
+  {
+    href: '#github',
+    icon: <FaSquareGithub/>,
+  },
+  {
+    href: '#dribble',
+    icon: <FiDribbble/>,
+  },
+];
 
 export const about = [
   {

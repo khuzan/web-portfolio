@@ -2,6 +2,12 @@ import React from "react";
 import "./portfolio.css";
 import { portfolio } from "../../constants";
 import { brush5, brush6 } from "../../assets";
+import { motion } from "framer-motion";
+import {
+  FromTopVariant,
+  FromBottomVariant,
+  PortfolioItemVariant,
+} from "../../motion/index";
 
 const Portfolio = () => {
   return (
@@ -10,13 +16,35 @@ const Portfolio = () => {
         <img src={brush5} alt="brush" />
       </div>
 
-      <h5>My Amazing Projects</h5>
-      <h2>Portfolio</h2>
+      <motion.h4
+        variants={FromTopVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        My Amazing Projects
+      </motion.h4>
+      <motion.h2
+        variants={FromBottomVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        Portfolio
+      </motion.h2>
 
       <div className="container portfolio__container">
-        {portfolio.map(({ id, image, title, github, demo }) => {
+        {portfolio.map(({ id, image, title, github, demo }, index) => {
           return (
-            <article key={id} className="portfolio__item">
+            <motion.article
+              key={id}
+              className="portfolio__item"
+              variants={PortfolioItemVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              custom={index}
+            >
               <div className="portfolio__item-image">
                 <img src={image} alt={title} />
               </div>
@@ -29,7 +57,7 @@ const Portfolio = () => {
                   Live Demo
                 </a>
               </div>
-            </article>
+            </motion.article>
           );
         })}
       </div>

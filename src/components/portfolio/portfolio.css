@@ -32,10 +32,12 @@
 }
 
 .portfolio__brush-1 {
+    z-index: -1;
     position: absolute;
 }
 
 .portfolio__brush-2 {
+    z-index: -1;
     position: absolute;
     left: 80%;
 }

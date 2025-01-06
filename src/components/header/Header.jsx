@@ -18,22 +18,22 @@ const Header = () => {
     <header id="header">
       <motion.div className="progress-bar" style={{ scaleX }} />
       <div className="container header__container">
-        <motion.h5 variants={hidFromTopVariant} initial="hidden" animate="visible">
+        <motion.h4 variants={hidFromTopVariant} initial="hidden" animate="visible">
           Hello I'm
-        </motion.h5>
+        </motion.h4>
 
         <motion.h1 variants={hidFromBottomVariant} initial="hidden" animate="visible">
           Aljon Mar
         </motion.h1>
 
-        <motion.h5
+        <motion.h4
           variants={hidFromBottomVariant}
           initial="hidden"
           animate="visible"
           className="text-light"
         >
           Web Developer
-        </motion.h5>
+        </motion.h4>
 
         <CTA />
         <HeaderSocial />

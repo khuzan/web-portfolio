@@ -3,13 +3,12 @@ import "./skills.css";
 import { frontend, backend, seo } from "../../constants";
 import { brush10, brush12 } from "../../assets";
 import { PiSealCheckFill } from "react-icons/pi";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   FromTopVariant,
   FromBottomVariant,
   SkillsContainerVariant,
   SkillsContentVariant,
-  AboutContentVariant,
 } from "../../motion/index";
 
 const Skills = () => {
@@ -19,14 +18,14 @@ const Skills = () => {
         <img src={brush12} alt="brush" />
       </div>
 
-      <motion.h5
+      <motion.h4
         variants={FromTopVariant}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
       >
         What Skills I Have
-      </motion.h5>
+      </motion.h4>
 
       <motion.h2
         variants={FromBottomVariant}

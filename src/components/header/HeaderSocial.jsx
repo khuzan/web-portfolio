@@ -1,16 +1,28 @@
-import React from 'react'
-import { BsLinkedin } from "react-icons/bs";
-import { FaSquareGithub } from "react-icons/fa6";
-import { FiDribbble } from "react-icons/fi";
+import React from "react";
+import { header__social } from "../../constants";
+import { motion } from "framer-motion";
+import { HeaderSocialVariant } from "../../motion/index";
 
 const HeaderSocial = () => {
   return (
-    <div className='header__socials'>
-        <a href="#linkedin" target='_blank'><BsLinkedin /></a>
-        <a href="#gh" target='_blank'><FaSquareGithub /></a>
-        <a href="#dribble" target='_blank'><FiDribbble /></a>
+    <div className="header__socials">
+      {header__social.map(({ href, icon }, index) => {
+        return (
+          <motion.a
+            href={href}
+            target="_blank"
+            variants={HeaderSocialVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            custom={index}
+          >
+            {icon}
+          </motion.a>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default HeaderSocial
+export default HeaderSocial;

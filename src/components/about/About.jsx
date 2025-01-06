@@ -2,7 +2,7 @@ import React from "react";
 import "./about.css";
 import { me_bora, brush1, brush2 } from "../../assets";
 import { about } from "../../constants";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   FromTopVariant,
   FromBottomVariant,
@@ -20,20 +20,20 @@ const About = () => {
         <img src={brush1} alt="brush" />
       </div>
 
-      <motion.h5
+      <motion.h4
         variants={FromTopVariant}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5}}
+        viewport={{ once: true, amount: 0.5 }}
       >
         Get To Know
-      </motion.h5>
+      </motion.h4>
 
       <motion.h2
         variants={FromBottomVariant}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5}}
+        viewport={{ once: true, amount: 0.5 }}
       >
         About Me
       </motion.h2>
@@ -47,7 +47,7 @@ const About = () => {
               variants={AboutImgVariant}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5}}
+              viewport={{ once: true, amount: 0.5 }}
             />
           </div>
         </div>
@@ -56,7 +56,7 @@ const About = () => {
           variants={AboutContentVariant}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5}}
+          viewport={{ once: true, amount: 0.5 }}
         >
           <div className="about__cards">
             {about.map(({ title, description, icon }, index) => {
@@ -67,8 +67,10 @@ const About = () => {
                   variants={AboutCardVariant}
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: true, amount: 0.5}}
+                  viewport={{ once: true, amount: 0.5 }}
                   custom={index}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.8 }}
                 >
                   {icon}
 
@@ -82,7 +84,7 @@ const About = () => {
             variants={AboutCardTextVariant}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5}}
+            viewport={{ once: true, amount: 0.5 }}
           >
             A passionate Web developer having an experience of building Web
             applications with Javascript / ReactJS / AngularJS and some other
@@ -95,7 +97,9 @@ const About = () => {
             variants={AboutButtonVariant}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5}}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.8 }}
+            viewport={{ once: true, amount: 0.5 }}
           >
             Let's Talk
           </motion.a>

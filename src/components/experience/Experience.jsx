@@ -3,6 +3,13 @@ import "./experience.css";
 import { brush3, brush4 } from "../../assets";
 import { HiMiniCodeBracketSquare } from "react-icons/hi2";
 import { experience__web, experience__seo } from "../../constants";
+import { motion } from "framer-motion";
+import {
+  FromTopVariant,
+  FromBottomVariant,
+  FromLeftVariant,
+  FromRightVariant,
+} from "../../motion/index";
 
 const Experience = () => {
   return (
@@ -10,12 +17,32 @@ const Experience = () => {
       <div className="experience__brush-1">
         <img src={brush3} alt="brush" />
       </div>
-      
-      <h5>My Recent Work</h5>
-      <h2>Experience</h2>
+
+      <motion.h4
+        variants={FromTopVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        My Recent Work
+      </motion.h4>
+      <motion.h2
+        variants={FromBottomVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        Experience
+      </motion.h2>
 
       <div className="container experience__container">
-        <article className="experience">
+        <motion.article
+          className="experience"
+          variants={FromLeftVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <div className="experience__head">
             <h3>Web Development</h3>
           </div>
@@ -34,9 +61,15 @@ const Experience = () => {
               );
             })}
           </ul>
-        </article>
+        </motion.article>
         {/* END OF WEB DEVELOPMENT*/}
-        <article className="experience">
+        <motion.article
+          className="experience"
+          variants={FromRightVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <div className="experience__head">
             <h3>SEO Link Building</h3>
           </div>
@@ -55,7 +88,7 @@ const Experience = () => {
               );
             })}
           </ul>
-        </article>
+        </motion.article>
         {/* END OF CONTENT CREATION */}
       </div>
       <div className="experience__brush-2">
