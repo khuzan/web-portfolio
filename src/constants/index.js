@@ -16,7 +16,6 @@ import {
 
 import { BsLinkedin } from "react-icons/bs";
 import { FaSquareGithub } from "react-icons/fa6";
-import { FiDribbble } from "react-icons/fi";
 
 import { FaAward } from "react-icons/fa6";
 import { FiUsers } from "react-icons/fi";
@@ -28,16 +27,16 @@ import { IoLogoLinkedin } from "react-icons/io5";
 
 export const header__social = [
   {
-    href: '#linkedin',
+    href: 'https://www.linkedin.com/in/aljon-mar-omandac-a3a653341/',
     icon: <BsLinkedin/>,
   },
   {
-    href: '#github',
+    href: 'https://github.com/khuzan',
     icon: <FaSquareGithub/>,
   },
   {
-    href: '#dribble',
-    icon: <FiDribbble/>,
+    href: 'https://www.upwork.com/freelancers/~01670f5dc03ab04ed4?mp_source=share',
+    icon: <FaSquareUpwork/>,
   },
 ];
 
@@ -151,12 +150,12 @@ export const portfolio = [
 export const experience__web = [
   {
     title: "Fullstack Developer",
-    company: "iBEST Integrating Systems",
+    company: "iBEST Integrating Systems : Aug 2018 - Aug 2021",
     description: "Develop web applications such as Point of sales, Inventory System and Reward System."
   },
   {
     title: "Software Engineer",
-    company: "Professy.Inc",
+    company: "Professy.Inc : Dec 2021 - Dec 2022",
     description: "Maintaining existing application which is Qualva - a chatbot with multiple functionalities."
   },
 ];
@@ -164,12 +163,12 @@ export const experience__web = [
 export const experience__seo = [
   {
     title: "Link Prospector",
-    company: "JustWatch",
+    company: "JustWatch : Aug 2023 - May 2024",
     description: "Add the most relevant prospects by finding and verifying their contact info as well as evaluating the appropriate website metrics."
   },
   {
     title: "Pitchbox - Prospector + Personalizer",
-    company: "ArkenDigital",
+    company: "ArkenDigital : June 2024 - Oct 2024",
     description: "Use Pitchbox to identify, analyze, and evaluate high-quality backlink prospects."
   },
 ]
