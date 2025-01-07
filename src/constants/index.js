@@ -128,22 +128,22 @@ export const portfolio = [
     id: 1,
     image: evogym,
     title: "EVOGYM",
-    github: "https://github.com",
-    demo: "demo",
+    github: "https://github.com/khuzan/fitness-gym",
+    demo: "https://khuzan.github.io/fitness-gym/",
   },
   {
     id: 2,
     image: hoobank,
     title: "HooBank",
-    github: "https://github.com",
-    demo: "demo",
+    github: "https://github.com/khuzan/business-web",
+    demo: "https://khuzan.github.io/business-web/",
   },
   {
     id: 3,
     image: janeesper,
     title: "Portfolio",
-    github: "https://github.com",
-    demo: "demo",
+    github: "https://github.com/khuzan/react-portfolio",
+    demo: "https://khuzan.github.io/react-portfolio/",
   },
 ];
 

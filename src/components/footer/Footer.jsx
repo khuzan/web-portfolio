@@ -17,9 +17,9 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="#"><IoLogoLinkedin/></a>
-        <a href="#"><FaGithub/></a>
-        <a href="#"><FaSquareUpwork/></a>
+        <a href="https://www.linkedin.com/in/aljon-mar-omandac-a3a653341/"><IoLogoLinkedin/></a>
+        <a href="https://github.com/khuzan"><FaGithub/></a>
+        <a href="https://www.upwork.com/freelancers/~01670f5dc03ab04ed4?mp_source=share"><FaSquareUpwork/></a>
       </div>
 
       <div className="footer__copyright">
