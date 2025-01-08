@@ -86,9 +86,7 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
           >
-            A passionate Web developer having an experience of building Web
-            applications with Javascript / ReactJS / AngularJS and some other
-            cool libraries and frameworks.
+            Web developer by day, bug squasher by night! Turning coffee into code with JavaScript and ReactJS magic. 🚀☕
           </motion.p>
 
           <motion.a
